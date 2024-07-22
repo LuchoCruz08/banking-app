@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Button } from "./ui/button";
 
 export default function Hero() {
   return (
@@ -15,8 +14,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-4 sm:text-xl/relaxed">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-            illo tenetur fuga ducimus numquam ea!
+            Our platform offers a comprehensive suite of features to help you stay on top of your banking needs.
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">

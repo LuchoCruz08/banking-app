@@ -1,14 +1,13 @@
 package com.banking_app.Entity;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -24,7 +23,7 @@ public class Transaction {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "bank_account_id", referencedColumnName = "id")
+    @JoinColumn(name = "bank_account_id", referencedColumnName = "bank_account_id")
     private BankAccount bankAccount;
 
     @Column(name = "amount")
